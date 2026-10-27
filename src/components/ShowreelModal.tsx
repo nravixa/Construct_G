@@ -66,10 +66,10 @@ export default function ShowreelModal({ isOpen, onClose }: ShowreelModalProps) {
               <Play size={14} fill="#fff" />
             </div>
             <div>
-              <h3 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: 800 }}>
+              <h3 style={{ fontSize: '1.05rem', color: '#F5F1E8', fontWeight: 800 }}>
                 G&J Buildcon • Engineering & Site Operations Showreel
               </h3>
-              <p style={{ fontSize: '0.74rem', color: '#a89e95' }}>
+              <p style={{ fontSize: '0.74rem', color: '#D1D5DB' }}>
                 High-Rise Construction & SANY Heavy Rotary Piling in Pune
               </p>
             </div>

@@ -228,7 +228,7 @@ export default function ParallaxShowcase() {
               className="font-serif"
               style={{
                 fontSize: 'clamp(2.4rem, 4vw, 3.6rem)',
-                color: '#ffffff',
+                color: '#F5F1E8',
                 fontWeight: 400,
                 lineHeight: 1.08,
                 marginBottom: '20px',
@@ -244,7 +244,7 @@ export default function ParallaxShowcase() {
             <p
               style={{
                 fontSize: '1.02rem',
-                color: 'var(--limestone-beige, #DCCDB3)',
+                color: '#D1D5DB',
                 lineHeight: 1.7,
                 marginBottom: '32px',
                 maxWidth: '540px',
@@ -266,7 +266,7 @@ export default function ParallaxShowcase() {
                 <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--sunset-gold, #D4A853)' }}>
                   24+ Meters
                 </div>
-                <div style={{ fontSize: '0.72rem', color: '#DCCDB3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
+                <div style={{ fontSize: '0.72rem', color: '#B0B7C3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
                   Basalt Rock Socketing
                 </div>
               </div>
@@ -283,7 +283,7 @@ export default function ParallaxShowcase() {
                 <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--seafoam-turquoise, #7FB8B6)' }}>
                   1200 mm
                 </div>
-                <div style={{ fontSize: '0.72rem', color: '#DCCDB3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
+                <div style={{ fontSize: '0.72rem', color: '#B0B7C3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
                   High-Torque Boreholes
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function ParallaxShowcase() {
                 <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#ffffff' }}>
                   IS 2911
                 </div>
-                <div style={{ fontSize: '0.72rem', color: '#DCCDB3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
+                <div style={{ fontSize: '0.72rem', color: '#B0B7C3', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.04em' }}>
                   Certified Testing
                 </div>
               </div>
@@ -312,6 +312,7 @@ export default function ParallaxShowcase() {
             {/* Midground Layer: Architectural Card */}
             <div
               ref={layerMidRef}
+              className="showcase-mid-card"
               style={{
                 position: 'relative',
                 background: 'rgba(247, 247, 245, 0.96)',
@@ -319,7 +320,7 @@ export default function ParallaxShowcase() {
                 padding: '20px',
                 boxShadow: '0 30px 70px rgba(0, 0, 0, 0.55), 0 0 30px rgba(212, 168, 83, 0.12)',
                 border: '1px solid rgba(220, 205, 179, 0.7)',
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 maxWidth: '460px',
                 margin: '0 auto',
                 willChange: 'transform',
@@ -361,10 +362,10 @@ export default function ParallaxShowcase() {
                 </div>
               </div>
 
-              <h4 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--ocean-navy, #0D1B2A)', marginBottom: '6px' }}>
+              <h4 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--text-primary, #0D1B2A)', marginBottom: '6px' }}>
                 Heavy Foundation Engineering
               </h4>
-              <p style={{ fontSize: '0.86rem', color: 'var(--driftwood-gray, #8A857F)', lineHeight: 1.55 }}>
+              <p style={{ fontSize: '0.86rem', color: 'var(--text-secondary, #D1D5DB)', lineHeight: 1.55 }}>
                 Cast-in-situ bored piling executing continuous rock socketing through hard basalt for major IT parks and residential towers across Pune.
               </p>
             </div>
@@ -382,7 +383,7 @@ export default function ParallaxShowcase() {
                 borderRadius: '22px',
                 padding: '16px 22px',
                 boxShadow: '0 20px 45px rgba(0, 0, 0, 0.35)',
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 border: '1px solid rgba(220, 205, 179, 0.8)',
                 display: 'flex',
                 alignItems: 'center',
@@ -397,7 +398,7 @@ export default function ParallaxShowcase() {
                   height: '40px',
                   borderRadius: '50%',
                   background: 'var(--sunset-gold, #D4A853)',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: '#0D1B2A',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -407,8 +408,8 @@ export default function ParallaxShowcase() {
                 <HardHat size={20} />
               </div>
               <div>
-                <div style={{ fontSize: '0.94rem', fontWeight: 800, color: 'var(--ocean-navy, #0D1B2A)' }}>700+ Manpower</div>
-                <div style={{ fontSize: '0.7rem', color: 'var(--driftwood-gray, #8A857F)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <div style={{ fontSize: '0.94rem', fontWeight: 800, color: 'var(--text-primary, #0D1B2A)' }}>700+ Manpower</div>
+                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted, #B0B7C3)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   In-House Site Operators
                 </div>
               </div>

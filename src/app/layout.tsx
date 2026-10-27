@@ -160,6 +160,29 @@ export default function RootLayout({
         <meta name="theme-color" content="#ebe5dd" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const params = new URLSearchParams(window.location.search);
+                const themeParam = params.get('theme');
+                let theme = localStorage.getItem('gj_theme');
+                if (themeParam === 'dark' || themeParam === 'light') {
+                  theme = themeParam;
+                  localStorage.setItem('gj_theme', themeParam);
+                }
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'dark' || (!theme && prefersDark)) {
+                  document.documentElement.classList.add('dark');
+                  document.documentElement.setAttribute('data-theme', 'dark');
+                } else if (theme === 'light') {
+                  document.documentElement.classList.remove('dark');
+                  document.documentElement.setAttribute('data-theme', 'light');
+                }
+              } catch(e) {}
+            `,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

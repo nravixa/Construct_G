@@ -110,14 +110,15 @@ export default function LeadershipStory() {
           {/* Left: Founder Portrait & Direct Engineering Ethos */}
           <div ref={imageCardRef}>
             <div
+              className="leadership-portrait-card"
               style={{
                 position: 'relative',
                 borderRadius: '32px',
                 overflow: 'hidden',
-                background: '#ffffff',
+                background: 'var(--bg-surface, #ffffff)',
                 padding: '12px',
-                boxShadow: '0 24px 60px rgba(13, 27, 42, 0.08), 0 0 20px rgba(212, 168, 83, 0.08)',
-                border: '1px solid rgba(220, 205, 179, 0.65)',
+                boxShadow: 'var(--shadow-card, 0 24px 60px rgba(13, 27, 42, 0.08))',
+                border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
               }}
             >
               <div
@@ -192,13 +193,13 @@ export default function LeadershipStory() {
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <ShieldCheck size={18} color="var(--sunset-gold, #D4A853)" />
-                  <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--ocean-navy, #0D1B2A)' }}>
+                  <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-primary, #0D1B2A)' }}>
                     IS 2911 Piling Standard
                   </span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <CheckCircle2 size={18} color="var(--seafoam-turquoise, #7FB8B6)" />
-                  <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--ocean-navy, #0D1B2A)' }}>
+                  <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-primary, #0D1B2A)' }}>
                     Zero Contractor Middlemen
                   </span>
                 </div>
@@ -225,7 +226,7 @@ export default function LeadershipStory() {
               className="font-serif"
               style={{
                 fontSize: 'clamp(2.2rem, 3.4vw, 3.2rem)',
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 fontWeight: 400,
                 lineHeight: 1.12,
                 marginBottom: '16px',
@@ -233,13 +234,13 @@ export default function LeadershipStory() {
               }}
             >
               Built On Rock, <br />
-              <span style={{ fontWeight: 600, color: 'var(--ocean-navy, #0D1B2A)' }}>Not Shortcuts.</span>
+              <span style={{ fontWeight: 600, color: 'var(--text-primary, #0D1B2A)' }}>Not Shortcuts.</span>
             </h2>
 
             <p
               style={{
                 fontSize: '0.98rem',
-                color: 'var(--driftwood-gray, #8A857F)',
+                color: 'var(--text-secondary, #D1D5DB)',
                 lineHeight: 1.65,
                 marginBottom: '24px',
               }}
@@ -249,15 +250,16 @@ export default function LeadershipStory() {
 
             {/* Quote Card */}
             <div
+              className="leadership-quote-card"
               style={{
-                background: '#ffffff',
+                background: 'var(--bg-surface, #ffffff)',
                 borderRadius: '20px',
                 padding: '22px 26px',
-                boxShadow: '0 8px 24px rgba(13, 27, 42, 0.05)',
+                boxShadow: 'var(--shadow-card, 0 8px 24px rgba(13, 27, 42, 0.05))',
                 borderLeft: '4px solid var(--sunset-gold, #D4A853)',
-                borderTop: '1px solid rgba(220, 205, 179, 0.5)',
-                borderRight: '1px solid rgba(220, 205, 179, 0.5)',
-                borderBottom: '1px solid rgba(220, 205, 179, 0.5)',
+                borderTop: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.5))',
+                borderRight: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.5))',
+                borderBottom: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.5))',
                 position: 'relative',
                 marginBottom: '32px',
               }}
@@ -271,26 +273,27 @@ export default function LeadershipStory() {
                 style={{
                   fontSize: '0.88rem',
                   fontStyle: 'italic',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   lineHeight: 1.6,
                   marginBottom: '8px',
                 }}
               >
                 “Whether casting a 22-storey residential tower in Ravet or drilling 1200mm piles into highway rock, our word is our bond. When G&J accepts a handover date, we deliver.”
               </p>
-              <div style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--ocean-navy, #0D1B2A)' }}>
+              <div style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--text-primary, #0D1B2A)' }}>
                 Umesh Gatkal • Founder & Managing Director
               </div>
             </div>
 
             {/* Milestone Chronology */}
             <div
+              className="leadership-milestone-card"
               style={{
-                background: '#ffffff',
+                background: 'var(--bg-surface, #ffffff)',
                 borderRadius: '24px',
                 padding: '28px 24px',
-                boxShadow: '0 10px 30px rgba(13, 27, 42, 0.05)',
-                border: '1px solid rgba(220, 205, 179, 0.65)',
+                boxShadow: 'var(--shadow-card, 0 10px 30px rgba(13, 27, 42, 0.05))',
+                border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
               }}
             >
               <div
@@ -299,7 +302,7 @@ export default function LeadershipStory() {
                   fontWeight: 800,
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   marginBottom: '20px',
                   display: 'flex',
                   alignItems: 'center',
@@ -322,8 +325,8 @@ export default function LeadershipStory() {
                         width: '38px',
                         height: '38px',
                         borderRadius: '50%',
-                        background: idx === 3 ? 'var(--ocean-navy, #0D1B2A)' : 'rgba(212, 168, 83, 0.15)',
-                        color: idx === 3 ? 'var(--sunset-gold, #D4A853)' : 'var(--sunset-gold, #D4A853)',
+                        background: idx === 3 ? 'var(--sunset-gold, #D4A853)' : 'rgba(212, 168, 83, 0.15)',
+                        color: idx === 3 ? '#0D1B2A' : 'var(--sunset-gold, #D4A853)',
                         border: idx === 3 ? '1px solid rgba(212, 168, 83, 0.5)' : '1px solid rgba(212, 168, 83, 0.3)',
                         display: 'flex',
                         alignItems: 'center',
@@ -350,13 +353,13 @@ export default function LeadershipStory() {
                         style={{
                           fontSize: '0.98rem',
                           fontWeight: 800,
-                          color: 'var(--ocean-navy, #0D1B2A)',
+                          color: 'var(--text-primary, #0D1B2A)',
                           marginBottom: '2px',
                         }}
                       >
                         {item.title}
                       </h4>
-                      <p style={{ fontSize: '0.8rem', color: 'var(--driftwood-gray, #8A857F)', lineHeight: 1.45 }}>
+                      <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary, #D1D5DB)', lineHeight: 1.45 }}>
                         {item.description}
                       </p>
                     </div>

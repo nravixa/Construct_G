@@ -134,7 +134,7 @@ export default function ServicesParallax() {
             className="font-serif"
             style={{
               fontSize: 'clamp(2.4rem, 3.8vw, 3.4rem)',
-              color: 'var(--ocean-navy, #0D1B2A)',
+              color: 'var(--text-primary, #0D1B2A)',
               fontWeight: 400,
               lineHeight: 1.08,
               marginBottom: '16px',
@@ -142,9 +142,9 @@ export default function ServicesParallax() {
             }}
           >
             Civil RCC Superstructures & <br />
-            <span style={{ fontWeight: 600, color: 'var(--ocean-navy, #0D1B2A)' }}>Deep Foundation Piling</span>
+            <span style={{ fontWeight: 600, color: 'var(--text-primary, #0D1B2A)' }}>Deep Foundation Piling</span>
           </h2>
-          <p style={{ color: 'var(--driftwood-gray, #8A857F)', fontSize: '1.02rem', lineHeight: 1.65 }}>
+          <p style={{ color: 'var(--text-secondary, #D1D5DB)', fontSize: '1.02rem', lineHeight: 1.65 }}>
             By maintaining direct in-house ownership of heavy SANY and MAT rotary rigs, self-climbing crane systems, and 700+ certified personnel, G&J Buildcon eliminates contractor bottlenecks across Maharashtra.
           </p>
         </div>
@@ -164,11 +164,11 @@ export default function ServicesParallax() {
                   gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
                   gap: '40px',
                   alignItems: 'center',
-                  background: '#ffffff',
+                  background: 'var(--bg-surface, #ffffff)',
                   borderRadius: '30px',
                   padding: 'clamp(20px, 4vw, 36px)',
-                  boxShadow: '0 12px 35px rgba(13, 27, 42, 0.06), 0 0 24px rgba(212, 168, 83, 0.06)',
-                  border: '1px solid rgba(220, 205, 179, 0.65)',
+                  boxShadow: 'var(--shadow-card, 0 12px 35px rgba(13, 27, 42, 0.06))',
+                  border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
                   position: 'relative',
                   overflow: 'hidden',
                 }}
@@ -243,7 +243,7 @@ export default function ServicesParallax() {
                     style={{
                       fontSize: 'clamp(1.5rem, 2.2vw, 1.9rem)',
                       fontWeight: 800,
-                      color: 'var(--ocean-navy, #0D1B2A)',
+                      color: 'var(--text-primary, #0D1B2A)',
                       marginBottom: '6px',
                       lineHeight: 1.2,
                     }}
@@ -263,7 +263,7 @@ export default function ServicesParallax() {
                   <p
                     style={{
                       fontSize: '0.94rem',
-                      color: 'var(--driftwood-gray, #8A857F)',
+                      color: 'var(--text-secondary, #D1D5DB)',
                       lineHeight: 1.65,
                       marginBottom: '22px',
                     }}
@@ -281,7 +281,7 @@ export default function ServicesParallax() {
                           border: '1px solid rgba(127, 184, 182, 0.3)',
                           fontSize: '0.74rem',
                           fontWeight: 600,
-                          color: 'var(--ocean-navy, #0D1B2A)',
+                          color: 'var(--text-primary, #0D1B2A)',
                           padding: '5px 12px',
                           borderRadius: '8px',
                         }}
@@ -299,7 +299,7 @@ export default function ServicesParallax() {
                       gap: '8px',
                       fontSize: '0.84rem',
                       fontWeight: 700,
-                      color: 'var(--ocean-navy, #0D1B2A)',
+                      color: 'var(--text-primary, #0D1B2A)',
                       borderBottom: '2px solid var(--sunset-gold, #D4A853)',
                       paddingBottom: '2px',
                       transition: 'all 0.2s',

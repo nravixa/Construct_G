@@ -331,8 +331,8 @@ export default function LeftFloatingDock({
                       left: '52px',
                       top: '50%',
                       transform: 'translateY(-50%)',
-                      background: 'var(--ocean-navy, #0D1B2A)',
-                      color: '#F7F7F5',
+                      background: '#0D1B2A',
+                      color: '#F5F1E8',
                       border: '1px solid var(--sunset-gold, #D4A853)',
                       padding: '10px 16px',
                       borderRadius: '16px',
@@ -345,7 +345,7 @@ export default function LeftFloatingDock({
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px', marginBottom: '2px' }}>
-                      <span style={{ fontSize: '0.84rem', fontWeight: 800, color: '#F7F7F5' }}>
+                      <span style={{ fontSize: '0.84rem', fontWeight: 800, color: '#F5F1E8' }}>
                         {item.label}
                       </span>
                       <span
@@ -363,7 +363,7 @@ export default function LeftFloatingDock({
                         {item.metric}
                       </span>
                     </div>
-                    <div style={{ fontSize: '0.72rem', color: 'var(--limestone-beige, #DCCDB3)', fontWeight: 500 }}>
+                    <div style={{ fontSize: '0.72rem', color: '#D1D5DB', fontWeight: 500 }}>
                       {item.subtitle}
                     </div>
                   </div>
@@ -505,7 +505,7 @@ export default function LeftFloatingDock({
           transform: scale(1.1);
         }
         .dock-calc-btn:hover {
-          background: var(--ocean-navy) !important;
+          background: #162638 !important;
           color: var(--sunset-gold) !important;
           border-color: var(--sunset-gold) !important;
           transform: scale(1.12);
@@ -517,13 +517,13 @@ export default function LeftFloatingDock({
         }
         .showreel-play-btn:hover {
           transform: scale(1.18);
-          background: var(--ocean-navy) !important;
+          background: #162638 !important;
           border-color: var(--sunset-gold) !important;
           box-shadow: var(--shadow-gold-glow) !important;
         }
         .dock-collapse-toggle:hover {
           background: var(--sunset-gold);
-          color: var(--ocean-navy);
+          color: #0D1B2A !important;
           transform: translateY(-50%) scale(1.18);
         }
         @keyframes fadeInHUD {

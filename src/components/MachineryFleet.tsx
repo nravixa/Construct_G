@@ -223,7 +223,7 @@ export default function MachineryFleet() {
             <p
               style={{
                 fontSize: 'clamp(0.92rem, 1.15vw, 1.04rem)',
-                color: 'var(--text-muted, #8A857F)',
+                color: 'var(--text-secondary, #D1D5DB)',
                 lineHeight: 1.6,
                 transition: 'color 0.35s ease',
               }}

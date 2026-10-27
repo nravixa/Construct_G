@@ -168,7 +168,7 @@ export default function Footer() {
                 style={{
                   fontSize: '0.9rem',
                   lineHeight: 1.65,
-                  color: 'var(--driftwood-gray, #8A857F)',
+                  color: 'var(--text-secondary, #D1D5DB)',
                   marginBottom: '18px',
                 }}
               >
@@ -194,7 +194,7 @@ export default function Footer() {
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',
                     fontWeight: 600,
-                    color: 'var(--driftwood-gray, #8A857F)',
+                    color: 'var(--text-muted, #B0B7C3)',
                   }}
                 >
                   Demo by
@@ -227,7 +227,7 @@ export default function Footer() {
               <h4
                 style={{
                   fontSize: '0.88rem',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   fontWeight: 700,
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em',
@@ -241,11 +241,11 @@ export default function Footer() {
                 Company
               </h4>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', padding: 0, margin: 0 }}>
-                <li><a href="#hero" style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none' }} className="hover:text-ocean-navy">Overview</a></li>
-                <li><a href="#projects" style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none' }} className="hover:text-ocean-navy">Selected Projects</a></li>
-                <li><a href="#services" style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none' }} className="hover:text-ocean-navy">Piling & Foundation</a></li>
-                <li><a href="#machinery" style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none' }} className="hover:text-ocean-navy">Machinery Fleet</a></li>
-                <li><a href="#leadership" style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none' }} className="hover:text-ocean-navy">Founder & Heritage</a></li>
+                <li><a href="#hero" style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none' }} className="hover:text-ocean-navy">Overview</a></li>
+                <li><a href="#projects" style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none' }} className="hover:text-ocean-navy">Selected Projects</a></li>
+                <li><a href="#services" style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none' }} className="hover:text-ocean-navy">Piling & Foundation</a></li>
+                <li><a href="#machinery" style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none' }} className="hover:text-ocean-navy">Machinery Fleet</a></li>
+                <li><a href="#leadership" style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none' }} className="hover:text-ocean-navy">Founder & Heritage</a></li>
               </ul>
             </div>
 
@@ -254,7 +254,7 @@ export default function Footer() {
               <h4
                 style={{
                   fontSize: '0.88rem',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   fontWeight: 700,
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em',
@@ -268,11 +268,11 @@ export default function Footer() {
                 Specialties
               </h4>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', padding: 0, margin: 0 }}>
-                <li><span style={{ color: 'var(--driftwood-gray, #8A857F)' }}>1200mm Rotary Piling</span></li>
-                <li><span style={{ color: 'var(--driftwood-gray, #8A857F)' }}>Deccan Basalt Excavation</span></li>
-                <li><span style={{ color: 'var(--driftwood-gray, #8A857F)' }}>High-Rise RCC Frames</span></li>
-                <li><span style={{ color: 'var(--driftwood-gray, #8A857F)' }}>Commercial IT Parks</span></li>
-                <li><span style={{ color: 'var(--driftwood-gray, #8A857F)' }}>Heritage Sanctuary Stone</span></li>
+                <li><span style={{ color: 'var(--text-secondary, #D1D5DB)' }}>1200mm Rotary Piling</span></li>
+                <li><span style={{ color: 'var(--text-secondary, #D1D5DB)' }}>Deccan Basalt Excavation</span></li>
+                <li><span style={{ color: 'var(--text-secondary, #D1D5DB)' }}>High-Rise RCC Frames</span></li>
+                <li><span style={{ color: 'var(--text-secondary, #D1D5DB)' }}>Commercial IT Parks</span></li>
+                <li><span style={{ color: 'var(--text-secondary, #D1D5DB)' }}>Heritage Sanctuary Stone</span></li>
               </ul>
             </div>
 
@@ -281,7 +281,7 @@ export default function Footer() {
               <h4
                 style={{
                   fontSize: '0.88rem',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   fontWeight: 700,
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em',
@@ -294,18 +294,18 @@ export default function Footer() {
                 <ShieldCheck size={14} style={{ color: 'var(--sunset-gold, #D4A853)' }} />
                 Pune HQ
               </h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', color: 'var(--driftwood-gray, #8A857F)' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', color: 'var(--text-secondary, #D1D5DB)' }}>
                 <div style={{ lineHeight: 1.5 }}>Flat No-3, B Wing, Ganga Park, Pimple Saudagar, Pune 411027</div>
                 <a
                   href="tel:+919168777272"
-                  style={{ color: 'var(--ocean-navy, #0D1B2A)', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  style={{ color: 'var(--text-primary, #0D1B2A)', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 >
                   <Phone size={13} style={{ color: 'var(--sunset-gold, #D4A853)' }} />
                   +91 9168777272
                 </a>
                 <a
                   href="mailto:gjconstruction111@gmail.com"
-                  style={{ color: 'var(--driftwood-gray, #8A857F)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  style={{ color: 'var(--text-secondary, #D1D5DB)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 >
                   <Mail size={13} style={{ color: 'var(--seafoam-turquoise, #7FB8B6)' }} />
                   gjconstruction111@gmail.com
@@ -737,7 +737,7 @@ export default function Footer() {
             <div
               style={{
                 fontSize: 'clamp(0.76rem, 1.2vw, 0.84rem)',
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 fontWeight: 600,
                 letterSpacing: '0.02em',
               }}
@@ -754,7 +754,7 @@ export default function Footer() {
                 fontSize: 'clamp(0.76rem, 1.2vw, 0.84rem)',
               }}
             >
-              <span style={{ color: 'var(--driftwood-gray, #8A857F)', fontWeight: 500 }}>Demo by</span>
+              <span style={{ color: 'var(--text-muted, #B0B7C3)', fontWeight: 500 }}>Demo by</span>
               <a
                 href="https://nravixa.vercel.app"
                 target="_blank"
@@ -821,7 +821,7 @@ export default function Footer() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   textDecoration: 'none',
                   transition: 'background 0.2s',
                 }}

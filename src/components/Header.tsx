@@ -16,9 +16,15 @@ export default function Header({ onOpenEstimator, onNavigateHome }: HeaderProps)
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('gj_theme');
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlTheme = urlParams.get('theme');
+      let saved = localStorage.getItem('gj_theme');
+      if (urlTheme === 'dark' || urlTheme === 'light') {
+        saved = urlTheme;
+        localStorage.setItem('gj_theme', urlTheme);
+      }
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const shouldBeDark = saved === 'dark' || (!saved && prefersDark);
+      const shouldBeDark = saved ? saved === 'dark' : Boolean(prefersDark);
       if (shouldBeDark) {
         setIsDark(true);
         document.documentElement.classList.add('dark');
@@ -138,7 +144,7 @@ export default function Header({ onOpenEstimator, onNavigateHome }: HeaderProps)
                     fontWeight: 700,
                     color: isActive
                       ? (isDark ? '#0D1B2A' : '#F7F7F5')
-                      : (isDark ? '#DCCDB3' : 'var(--ocean-navy)'),
+                      : (isDark ? '#D1D5DB' : 'var(--ocean-navy)'),
                     background: isActive
                       ? (isDark ? 'linear-gradient(135deg, #ECC675 0%, #D4A853 100%)' : 'var(--ocean-navy)')
                       : 'transparent',
@@ -287,7 +293,7 @@ export default function Header({ onOpenEstimator, onNavigateHome }: HeaderProps)
                 textAlign: 'left',
                 fontSize: '1.05rem',
                 fontWeight: 700,
-                color: isDark ? '#F7F7F5' : 'var(--ocean-navy)',
+                color: isDark ? '#F5F1E8' : 'var(--ocean-navy)',
                 padding: '12px 4px',
                 borderBottom: isDark ? '1px solid rgba(255, 255, 255, 0.06)' : '1px solid rgba(13, 27, 42, 0.05)',
                 display: 'flex',

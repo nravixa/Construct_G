@@ -188,8 +188,8 @@ export default function CostEstimatorModal({ isOpen, onClose }: CostEstimatorMod
                         fontSize: '0.82rem',
                         fontWeight: 700,
                         background: isSelected
-                          ? 'var(--ocean-navy, #0D1B2A)'
-                          : 'rgba(220, 205, 179, 0.2)',
+                          ? 'linear-gradient(145deg, #162638 0%, #0D1B2A 100%)'
+                          : 'rgba(220, 205, 179, 0.15)',
                         color: isSelected ? 'var(--sunset-gold, #D4A853)' : 'var(--text-primary, #0D1B2A)',
                         border: isSelected
                           ? '1px solid var(--sunset-gold, #D4A853)'
@@ -338,7 +338,7 @@ export default function CostEstimatorModal({ isOpen, onClose }: CostEstimatorMod
                   background: 'rgba(127, 184, 182, 0.12)',
                   border: '1px solid rgba(127, 184, 182, 0.3)',
                   fontSize: '0.74rem',
-                  color: 'var(--text-muted, #8A857F)',
+                  color: 'var(--text-secondary, #D1D5DB)',
                   lineHeight: 1.45,
                 }}
               >

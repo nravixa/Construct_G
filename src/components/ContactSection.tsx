@@ -274,7 +274,7 @@ export default function ContactSection() {
             <p
               style={{
                 fontSize: 'clamp(0.94rem, 1.2vw, 1.06rem)',
-                color: 'var(--text-muted, #8A857F)',
+                color: 'var(--text-secondary, #D1D5DB)',
                 lineHeight: 1.65,
                 marginBottom: '32px',
                 maxWidth: '540px',
@@ -615,7 +615,7 @@ export default function ContactSection() {
             <p
               style={{
                 fontSize: '0.86rem',
-                color: 'var(--text-muted, #8A857F)',
+                color: 'var(--text-secondary, #D1D5DB)',
                 marginBottom: '22px',
                 lineHeight: 1.5,
                 transition: 'color 0.35s ease',
@@ -694,7 +694,7 @@ export default function ContactSection() {
                             background: isSelected
                               ? 'var(--grad-ocean-dark, linear-gradient(145deg, #162638 0%, #0D1B2A 100%))'
                               : 'var(--bg-surface, #ffffff)',
-                            color: isSelected ? 'var(--text-inverted, #F7F7F5)' : 'var(--text-primary, #0D1B2A)',
+                            color: isSelected ? '#F5F1E8' : 'var(--text-primary, #0D1B2A)',
                             cursor: 'pointer',
                             display: 'flex',
                             alignItems: 'center',

@@ -135,7 +135,7 @@ Please share structural drawings and engineer appointment confirmation.`
             <span>&gt;</span>
             <span style={{ color: 'var(--sunset-gold, #D4A853)', fontWeight: 700 }}>{project.category}</span>
             <span>&gt;</span>
-            <span style={{ color: 'var(--ocean-navy, #0D1B2A)', fontWeight: 700 }}>{project.title}</span>
+            <span style={{ color: 'var(--text-primary, #0D1B2A)', fontWeight: 700 }}>{project.title}</span>
           </div>
 
           {/* Close Pill Button */}
@@ -147,12 +147,12 @@ Please share structural drawings and engineer appointment confirmation.`
               gap: '6px',
               padding: '8px 18px',
               borderRadius: '9999px',
-              background: '#ffffff',
-              border: '1px solid rgba(220, 205, 179, 0.65)',
+              background: 'var(--bg-surface, #ffffff)',
+              border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
               fontSize: '0.84rem',
               fontWeight: 700,
-              color: 'var(--ocean-navy, #0D1B2A)',
-              boxShadow: '0 2px 8px rgba(13, 27, 42, 0.05)',
+              color: 'var(--text-primary, #0D1B2A)',
+              boxShadow: 'var(--shadow-card, 0 2px 8px rgba(13, 27, 42, 0.05))',
               cursor: 'pointer',
             }}
           >
@@ -177,7 +177,7 @@ Please share structural drawings and engineer appointment confirmation.`
               style={{
                 fontSize: 'clamp(2rem, 3.2vw, 2.8rem)',
                 fontWeight: 800,
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 letterSpacing: '-0.025em',
                 lineHeight: 1.15,
                 marginBottom: '6px',
@@ -190,7 +190,7 @@ Please share structural drawings and engineer appointment confirmation.`
                 display: 'flex',
                 alignItems: 'center',
                 gap: '6px',
-                color: 'var(--driftwood-gray, #8A857F)',
+                color: 'var(--text-muted, #8A857F)',
                 fontSize: '0.9rem',
               }}
             >
@@ -208,7 +208,7 @@ Please share structural drawings and engineer appointment confirmation.`
                 borderRadius: '9999px',
                 fontSize: '0.82rem',
                 fontWeight: 700,
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--seafoam-dark, #5E9F9D)',
               }}
             >
               Client: {project.client}
@@ -329,12 +329,13 @@ Please share structural drawings and engineer appointment confirmation.`
 
               {/* Floating White Booking Card */}
               <div
+                className="modal-booking-card"
                 style={{
-                  background: '#ffffff',
+                  background: 'var(--bg-surface, #ffffff)',
                   borderRadius: '24px',
                   padding: '24px',
-                  boxShadow: '0 16px 40px rgba(13, 27, 42, 0.08)',
-                  border: '1px solid rgba(220, 205, 179, 0.65)',
+                  boxShadow: 'var(--shadow-card, 0 16px 40px rgba(13, 27, 42, 0.08))',
+                  border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
                   marginBottom: '24px',
                 }}
               >
@@ -350,12 +351,12 @@ Please share structural drawings and engineer appointment confirmation.`
                     style={{
                       fontSize: '1.8rem',
                       fontWeight: 900,
-                      color: 'var(--ocean-navy, #0D1B2A)',
+                      color: 'var(--text-primary, #0D1B2A)',
                     }}
                   >
                     {project.specs.area}
                   </span>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--driftwood-gray, #8A857F)' }}>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted, #8A857F)' }}>
                     • {project.specs.scope}
                   </span>
                 </div>
@@ -371,30 +372,32 @@ Please share structural drawings and engineer appointment confirmation.`
                 >
                   <div
                     style={{
-                      border: '1px solid rgba(220, 205, 179, 0.6)',
+                      border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.6))',
                       borderRadius: '12px',
                       padding: '8px 12px',
+                      background: 'var(--bg-surface-translucent, rgba(247, 247, 245, 0.5))',
                     }}
                   >
-                    <div style={{ fontSize: '0.66rem', color: 'var(--driftwood-gray, #8A857F)', fontWeight: 700, textTransform: 'uppercase' }}>
+                    <div style={{ fontSize: '0.66rem', color: 'var(--text-muted, #8A857F)', fontWeight: 700, textTransform: 'uppercase' }}>
                       Proposed Start
                     </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--ocean-navy, #0D1B2A)' }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-primary, #0D1B2A)' }}>
                       Nov 01, 2026
                     </div>
                   </div>
 
                   <div
                     style={{
-                      border: '1px solid rgba(220, 205, 179, 0.6)',
+                      border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.6))',
                       borderRadius: '12px',
                       padding: '8px 12px',
+                      background: 'var(--bg-surface-translucent, rgba(247, 247, 245, 0.5))',
                     }}
                   >
-                    <div style={{ fontSize: '0.66rem', color: 'var(--driftwood-gray, #8A857F)', fontWeight: 700, textTransform: 'uppercase' }}>
+                    <div style={{ fontSize: '0.66rem', color: 'var(--text-muted, #8A857F)', fontWeight: 700, textTransform: 'uppercase' }}>
                       Target Delivery
                     </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--ocean-navy, #0D1B2A)' }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-primary, #0D1B2A)' }}>
                       {project.specs.duration}
                     </div>
                   </div>
@@ -409,11 +412,11 @@ Please share structural drawings and engineer appointment confirmation.`
                       width: '100%',
                       padding: '10px 12px',
                       borderRadius: '12px',
-                      border: '1px solid rgba(220, 205, 179, 0.6)',
-                      background: 'rgba(247, 247, 245, 0.5)',
+                      border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.6))',
+                      background: 'var(--bg-surface-translucent, rgba(247, 247, 245, 0.5))',
                       fontSize: '0.84rem',
                       fontWeight: 600,
-                      color: 'var(--ocean-navy, #0D1B2A)',
+                      color: 'var(--text-primary, #0D1B2A)',
                       outline: 'none',
                     }}
                   >
@@ -431,7 +434,7 @@ Please share structural drawings and engineer appointment confirmation.`
                     width: '100%',
                     padding: '14px',
                     fontSize: '0.92rem',
-                    background: 'var(--ocean-navy, #0D1B2A)',
+                    background: 'linear-gradient(135deg, #162638 0%, #0D1B2A 100%)',
                     color: 'var(--sunset-gold, #D4A853)',
                     border: '1px solid rgba(212, 168, 83, 0.4)',
                     boxShadow: '0 8px 20px rgba(13, 27, 42, 0.25)',
@@ -454,7 +457,7 @@ Please share structural drawings and engineer appointment confirmation.`
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--ocean-navy, #0D1B2A)' }}>
+                  <span style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-primary, #0D1B2A)' }}>
                     {project.rating.toFixed(1)}
                   </span>
                   <div style={{ display: 'flex', gap: '2px' }}>
@@ -462,7 +465,7 @@ Please share structural drawings and engineer appointment confirmation.`
                       <Star key={i} size={14} fill="#D4A853" color="#D4A853" />
                     ))}
                   </div>
-                  <span style={{ fontSize: '0.78rem', color: 'var(--driftwood-gray, #8A857F)' }}>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--text-muted, #8A857F)' }}>
                     ({project.reviewsCount} reviews)
                   </span>
                 </div>
@@ -489,9 +492,10 @@ Please share structural drawings and engineer appointment confirmation.`
                 ].map((amenity, i) => (
                   <div
                     key={i}
+                    className="modal-amenity-card"
                     style={{
-                      background: '#ffffff',
-                      border: '1px solid rgba(0,0,0,0.06)',
+                      background: 'var(--bg-surface, #ffffff)',
+                      border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.45))',
                       borderRadius: '14px',
                       padding: '12px 6px',
                       display: 'flex',
@@ -501,7 +505,7 @@ Please share structural drawings and engineer appointment confirmation.`
                     }}
                   >
                     {amenity.icon}
-                    <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--text-secondary)' }}>
+                    <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--text-secondary, #4A4641)' }}>
                       {amenity.label}
                     </span>
                   </div>

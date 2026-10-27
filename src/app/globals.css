@@ -84,10 +84,10 @@ html.dark,
   --bg-dark-card: #0A1624;
   --bg-dark-surface: #0E1F32;
 
-  --text-primary: #F7F7F5;
-  --text-secondary: #DCCDB3;
-  --text-muted: #9E9991;
-  --text-subtle: #8A857F;
+  --text-primary: #F5F1E8;
+  --text-secondary: #D1D5DB;
+  --text-muted: #B0B7C3;
+  --text-subtle: #9CA3AF;
   --text-inverted: #0D1B2A;
   --text-gold: #ECC675;
 
@@ -701,6 +701,132 @@ html.dark .hero-cta-desc,
   color: var(--sunset-gold-dark);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(212, 168, 83, 0.18);
+}
+
+/* ============================================================
+   WEBSITE-WIDE DARK MODE UTILITIES & COMPONENT CONTRAST OVERRIDES
+   ============================================================ */
+html.dark .btn-outline-pill,
+[data-theme='dark'] .btn-outline-pill {
+  background: rgba(13, 27, 42, 0.88);
+  border-color: rgba(212, 168, 83, 0.4);
+  color: #F5F1E8;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .btn-outline-pill:hover,
+[data-theme='dark'] .btn-outline-pill:hover {
+  background: rgba(20, 38, 58, 0.95);
+  border-color: #ECC675;
+  color: #ECC675;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 16px rgba(212, 168, 83, 0.25);
+}
+
+/* Global Form Inputs, Textareas, Selects in Dark Mode */
+html.dark input,
+html.dark textarea,
+html.dark select,
+[data-theme='dark'] input,
+[data-theme='dark'] textarea,
+[data-theme='dark'] select {
+  background: rgba(10, 20, 32, 0.88) !important;
+  color: #F5F1E8 !important;
+  border-color: rgba(212, 168, 83, 0.35) !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder,
+[data-theme='dark'] input::placeholder,
+[data-theme='dark'] textarea::placeholder {
+  color: #9CA3AF !important;
+  opacity: 1 !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus,
+[data-theme='dark'] input:focus,
+[data-theme='dark'] textarea:focus,
+[data-theme='dark'] select:focus {
+  border-color: #ECC675 !important;
+  box-shadow: 0 0 12px rgba(212, 168, 83, 0.3) !important;
+}
+
+/* Architectural Project Cards in Dark Mode */
+html.dark .editorial-project-card,
+[data-theme='dark'] .editorial-project-card {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.32) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55), 0 0 16px rgba(212, 168, 83, 0.08) !important;
+}
+
+html.dark .editorial-project-card:hover,
+[data-theme='dark'] .editorial-project-card:hover {
+  border-color: #ECC675 !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), 0 0 26px rgba(212, 168, 83, 0.25) !important;
+}
+
+/* Services Pillar Editorial Cards in Dark Mode */
+html.dark .service-editorial-card,
+[data-theme='dark'] .service-editorial-card {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.32) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 168, 83, 0.08) !important;
+}
+
+/* Leadership Story Cards in Dark Mode */
+html.dark .leadership-portrait-card,
+html.dark .leadership-quote-card,
+html.dark .leadership-milestone-card,
+[data-theme='dark'] .leadership-portrait-card,
+[data-theme='dark'] .leadership-quote-card,
+[data-theme='dark'] .leadership-milestone-card {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.32) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 168, 83, 0.08) !important;
+}
+
+/* Parallax Bedrock Showcase Floating Cards */
+html.dark .showcase-mid-card,
+html.dark .showcase-floating-chip,
+[data-theme='dark'] .showcase-mid-card,
+[data-theme='dark'] .showcase-floating-chip {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.35) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 24px rgba(212, 168, 83, 0.15) !important;
+  color: #F5F1E8 !important;
+}
+
+/* Project & Estimator Modals in Dark Mode */
+html.dark .modal-editorial-container,
+html.dark .estimator-modal-sheet,
+[data-theme='dark'] .modal-editorial-container,
+[data-theme='dark'] .estimator-modal-sheet {
+  background: #0B1622 !important;
+  color: #F5F1E8 !important;
+  border-color: rgba(212, 168, 83, 0.35) !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 168, 83, 0.15) !important;
+}
+
+html.dark .modal-booking-card,
+[data-theme='dark'] .modal-booking-card {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.35) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.6) !important;
+}
+
+html.dark .modal-amenity-card,
+[data-theme='dark'] .modal-amenity-card {
+  background: rgba(13, 27, 42, 0.85) !important;
+  border-color: rgba(212, 168, 83, 0.25) !important;
+}
+
+/* Footer Bottom Bar Floating Pill in Dark Mode */
+html.dark .footer-bottom-bar,
+[data-theme='dark'] .footer-bottom-bar {
+  background: rgba(13, 27, 42, 0.94) !important;
+  border-color: rgba(212, 168, 83, 0.4) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65) !important;
 }
 
 /* Image Merging Overlays & Feathering Utilities */

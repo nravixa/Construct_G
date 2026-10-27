@@ -163,7 +163,7 @@ export default function ProjectsSection({
               className="font-serif"
               style={{
                 fontSize: 'clamp(2rem, 3.2vw, 2.8rem)',
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 fontWeight: 400,
                 letterSpacing: '-0.02em',
                 marginBottom: '4px',
@@ -171,7 +171,7 @@ export default function ProjectsSection({
             >
               Landmarks Across Maharashtra
             </h2>
-            <p style={{ color: 'var(--driftwood-gray, #8A857F)', fontSize: '0.92rem' }}>
+            <p style={{ color: 'var(--text-secondary, #D1D5DB)', fontSize: '0.92rem' }}>
               Over 25+ Lakh sq. ft. of structural engineering delivered across Pune & Maharashtra
             </p>
           </div>
@@ -183,8 +183,8 @@ export default function ProjectsSection({
               style={{
                 display: 'flex',
                 gap: '6px',
-                background: 'rgba(220, 205, 179, 0.35)',
-                border: '1px solid rgba(220, 205, 179, 0.5)',
+                background: 'var(--bg-surface-translucent, rgba(220, 205, 179, 0.35))',
+                border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.5))',
                 padding: '4px',
                 borderRadius: '9999px',
                 overflowX: 'auto',
@@ -206,9 +206,9 @@ export default function ProjectsSection({
                       borderRadius: '9999px',
                       fontSize: '0.82rem',
                       fontWeight: 700,
-                      background: isActive ? 'var(--ocean-navy, #0D1B2A)' : 'transparent',
-                      color: isActive ? 'var(--sunset-gold, #D4A853)' : 'var(--driftwood-gray, #8A857F)',
-                      border: isActive ? '1px solid rgba(212, 168, 83, 0.4)' : '1px solid transparent',
+                      background: isActive ? 'linear-gradient(145deg, #162638 0%, #0D1B2A 100%)' : 'transparent',
+                      color: isActive ? 'var(--sunset-gold, #D4A853)' : 'var(--text-secondary, #D1D5DB)',
+                      border: isActive ? '1px solid rgba(212, 168, 83, 0.5)' : '1px solid transparent',
                       transition: 'all 0.2s ease',
                       whiteSpace: 'nowrap',
                       flexShrink: 0,
@@ -240,9 +240,10 @@ export default function ProjectsSection({
             style={{
               padding: '60px 20px',
               textAlign: 'center',
-              background: '#ffffff',
+              background: 'var(--bg-surface, #ffffff)',
+              border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.6))',
               borderRadius: '24px',
-              boxShadow: '0 8px 24px rgba(0,0,0,0.04)',
+              boxShadow: 'var(--shadow-card, 0 8px 24px rgba(0,0,0,0.04))',
             }}
           >
             <h3 style={{ color: 'var(--text-primary)', marginBottom: '8px' }}>

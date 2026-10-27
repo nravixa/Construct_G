@@ -457,7 +457,7 @@ export default function Testimonials() {
                   gap: '5px',
                   fontSize: '0.74rem',
                   fontWeight: 700,
-                  color: 'var(--ocean-navy, #0D1B2A)',
+                  color: 'var(--text-primary, #0D1B2A)',
                   background: 'rgba(127, 184, 182, 0.16)',
                   padding: '4px 10px',
                   borderRadius: '9999px',
@@ -655,7 +655,7 @@ export default function Testimonials() {
                   fontSize: '0.86rem',
                   fontWeight: 700,
                   letterSpacing: '0.04em',
-                  color: isSelected ? 'var(--text-inverted, #F7F7F5)' : 'var(--text-primary, #0D1B2A)',
+                  color: isSelected ? '#F5F1E8' : 'var(--text-primary, #0D1B2A)',
                   background: isSelected
                     ? 'var(--grad-ocean-dark, linear-gradient(135deg, #162638 0%, #0D1B2A 100%))'
                     : 'var(--bg-surface-translucent, rgba(255, 255, 255, 0.85))',

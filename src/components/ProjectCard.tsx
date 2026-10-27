@@ -16,27 +16,17 @@ export default function ProjectCard({ project, onOpenDetail }: ProjectCardProps)
     <div
       onClick={() => onOpenDetail(project)}
       style={{
-        background: '#ffffff',
+        background: 'var(--bg-surface, #ffffff)',
         borderRadius: '22px',
         overflow: 'hidden',
-        boxShadow: '0 8px 24px rgba(13, 27, 42, 0.06)',
-        border: '1px solid rgba(220, 205, 179, 0.65)',
+        boxShadow: 'var(--shadow-card, 0 8px 24px rgba(13, 27, 42, 0.06))',
+        border: '1px solid var(--border-limestone, rgba(220, 205, 179, 0.65))',
         cursor: 'pointer',
         transition: 'all 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
         display: 'flex',
         flexDirection: 'column',
       }}
       className="editorial-project-card"
-      onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'translateY(-6px)';
-        e.currentTarget.style.boxShadow = '0 20px 44px rgba(13, 27, 42, 0.12), 0 0 24px rgba(212, 168, 83, 0.18)';
-        e.currentTarget.style.borderColor = 'rgba(212, 168, 83, 0.8)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'translateY(0)';
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(13, 27, 42, 0.06)';
-        e.currentTarget.style.borderColor = 'rgba(220, 205, 179, 0.65)';
-      }}
     >
       {/* Thumbnail Area */}
       <div
@@ -121,7 +111,7 @@ export default function ProjectCard({ project, onOpenDetail }: ProjectCardProps)
               style={{
                 fontSize: '1.15rem',
                 fontWeight: 800,
-                color: 'var(--ocean-navy, #0D1B2A)',
+                color: 'var(--text-primary, #0D1B2A)',
                 lineHeight: 1.25,
               }}
             >
@@ -134,7 +124,7 @@ export default function ProjectCard({ project, onOpenDetail }: ProjectCardProps)
               display: 'flex',
               alignItems: 'center',
               gap: '6px',
-              color: 'var(--driftwood-gray, #8A857F)',
+              color: 'var(--text-muted, #8A857F)',
               fontSize: '0.82rem',
               marginBottom: '12px',
             }}
@@ -147,7 +137,7 @@ export default function ProjectCard({ project, onOpenDetail }: ProjectCardProps)
             style={{
               display: 'inline-block',
               background: 'rgba(127, 184, 182, 0.12)',
-              color: 'var(--ocean-navy, #0D1B2A)',
+              color: 'var(--seafoam-dark, #5E9F9D)',
               border: '1px solid rgba(127, 184, 182, 0.35)',
               fontSize: '0.74rem',
               fontWeight: 700,
@@ -166,16 +156,16 @@ export default function ProjectCard({ project, onOpenDetail }: ProjectCardProps)
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            borderTop: '1px solid rgba(220, 205, 179, 0.45)',
+            borderTop: '1px solid var(--border-light, rgba(220, 205, 179, 0.45))',
             paddingTop: '12px',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
             <Star size={14} fill="#D4A853" color="#D4A853" />
-            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--ocean-navy, #0D1B2A)' }}>
+            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-primary, #0D1B2A)' }}>
               {project.rating.toFixed(1)}
             </span>
-            <span style={{ fontSize: '0.74rem', color: 'var(--driftwood-gray, #8A857F)' }}>
+            <span style={{ fontSize: '0.74rem', color: 'var(--text-muted, #8A857F)' }}>
               ({project.reviewsCount})
             </span>
           </div>
