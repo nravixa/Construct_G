@@ -1,0 +1,109 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 24K Architectural Sunset Gold Gradient -->
+    <linearGradient id="brandGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5DEB3" />
+      <stop offset="35%" stop-color="#ECC675" />
+      <stop offset="70%" stop-color="#D4A853" />
+      <stop offset="100%" stop-color="#A87A28" />
+    </linearGradient>
+
+    <!-- Seafoam Turquoise Keystone Accent -->
+    <linearGradient id="brandSeafoamGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5E9F9D" />
+      <stop offset="100%" stop-color="#7FB8B6" />
+    </linearGradient>
+
+    <!-- Plinth Base Gradient -->
+    <linearGradient id="brandPlinthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(212, 168, 83, 0.16)" />
+      <stop offset="100%" stop-color="rgba(13, 27, 42, 0.05)" />
+    </linearGradient>
+
+    <!-- Soft Ambient Halo Shadow -->
+    <filter id="brandGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#D4A853" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Precision Architectural Plinth (Luxury Beveled Squircle) -->
+  <rect
+    x="4"
+    y="4"
+    width="92"
+    height="92"
+    rx="20"
+    fill="url(#brandPlinthGrad)"
+    stroke="url(#brandGoldGrad)"
+    stroke-width="1.8"
+  />
+
+  <!-- Subtle Inset Construction Guideline -->
+  <rect
+    x="8.5"
+    y="8.5"
+    width="83"
+    height="83"
+    rx="16"
+    stroke="rgba(212, 168, 83, 0.22)"
+    stroke-width="0.8"
+    stroke-dasharray="3 3"
+  />
+
+  <!-- Foundation Pillar 'J' (Rock-Socketed Vertical Column) -->
+  <path
+    d="M 52 20 
+       L 64 20 
+       L 64 61 
+       C 64 70.5, 57 76.5, 47 76.5 
+       C 37 76.5, 30 70, 30 61.5 
+       L 40.5 61.5 
+       C 40.5 65.5, 43 68, 47 68 
+       C 51 68, 54 65, 54 60.5 
+       L 54 20 
+       Z"
+    fill="#0D1B2A"
+  />
+
+  <!-- Structural Architectural 'G' (Cantilever Beam Monolith) -->
+  <path
+    d="M 76 29 
+       L 38 29 
+       C 26 29, 18 38, 18 50 
+       C 18 62, 26 71, 38 71 
+       L 41 71 
+       L 41 62.5 
+       L 38 62.5 
+       C 31 62.5, 27 57, 27 50 
+       C 27 43.5, 31 38, 38 38 
+       L 76 38 
+       Z"
+    fill="url(#brandGoldGrad)"
+    filter="url(#brandGlow)"
+  />
+
+  <!-- 'G' Crossbar & Return Cantilever Column -->
+  <path
+    d="M 68 45 
+       L 82 45 
+       L 82 66 
+       C 82 72.5, 76 77.5, 69 77.5 
+       L 53 77.5 
+       L 53 69 
+       L 68 69 
+       C 71.5 69, 73.5 67, 73.5 64 
+       L 73.5 53.5 
+       L 68 53.5 
+       Z"
+    fill="url(#brandGoldGrad)"
+    filter="url(#brandGlow)"
+  />
+
+  <!-- Architectural Keystone Crown Facet (Seafoam Turquoise) -->
+  <polygon
+    points="50,11 54.5,16 50,21 45.5,16"
+    fill="url(#brandSeafoamGrad)"
+    stroke="url(#brandGoldGrad)"
+    stroke-width="0.8"
+  />
+</svg>
